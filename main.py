@@ -14,6 +14,13 @@ pygame.display.set_caption("Aim Trainer")
 class Target:
     MAX_SIZE = 30
     GROWTH_RATE = 0.2
+    COLOR = "red"
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.size = 0
+        self.grow = True
 
 
 def main():
