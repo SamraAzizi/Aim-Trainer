@@ -32,6 +32,9 @@ class Target:
             self.size == self.GROWTH_RATE
 
 
+    def draw(self, win):
+        pygame.draw.circle()
+
 
 def main():
     run = True
