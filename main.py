@@ -57,6 +57,11 @@ def main():
                 run = False
                 break
 
+            if event.type == TARGET_EVENT:
+                x = random.randint(TARGET_PADDING, WIDTH - TARGET_PADDING )
+
+
+
 
     
     pygame.quit()
