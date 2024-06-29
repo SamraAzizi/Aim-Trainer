@@ -14,6 +14,8 @@ pygame.display.set_caption("Aim Trainer")
 TARGET_INCREMENT = 400
 TARGET_EVENT = pygame.USEREVENT
 
+TARGET_PADDING = 30
+
 class Target:
     MAX_SIZE = 30
     GROWTH_RATE = 0.2
@@ -47,6 +49,7 @@ def main():
     run = True
 
     targets = []
+    pygame.time.set_timer(TARGET_EVENT, TARGET_INCREMENT)
 
     while run:
         for event in pygame.event.get():
