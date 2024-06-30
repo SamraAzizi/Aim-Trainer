@@ -60,6 +60,9 @@ def main():
 
     targets = []
     clock = pygame.time.Clock()
+    target_pressed = 0
+    clicks = 0
+    start_time = time.time()
     pygame.time.set_timer(TARGET_EVENT, TARGET_INCREMENT)
 
     while run:
