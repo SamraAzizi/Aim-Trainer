@@ -75,6 +75,10 @@ def main():
 
 
 
+        for target in targets:
+            target.update()
+            
+        draw(WIN, targets)
     
     pygame.quit()
 
