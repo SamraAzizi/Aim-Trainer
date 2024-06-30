@@ -63,6 +63,7 @@ def main():
     pygame.time.set_timer(TARGET_EVENT, TARGET_INCREMENT)
 
     while run:
+        clock.tick(60)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -78,6 +79,9 @@ def main():
 
         for target in targets:
             target.update()
+
+            if target.size == 0:
+                targets.remove(target)
 
         draw(WIN, targets)
     
