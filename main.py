@@ -59,6 +59,7 @@ def main():
     run = True
 
     targets = []
+    clock = pygame.time.Clock()
     pygame.time.set_timer(TARGET_EVENT, TARGET_INCREMENT)
 
     while run:
@@ -77,7 +78,7 @@ def main():
 
         for target in targets:
             target.update()
-            
+
         draw(WIN, targets)
     
     pygame.quit()
