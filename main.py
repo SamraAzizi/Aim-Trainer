@@ -81,6 +81,12 @@ def main():
                 targets.append(target)
 
 
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                click = True
+                clicks == 1
+
+
+
 
         for target in targets:
             target.update()
