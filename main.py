@@ -55,17 +55,6 @@ def draw(win, target):
     pygame.display.update()
 
 
-def main():
-    run = True
-
-    targets = []
-    clock = pygame.time.Clock()
-    target_pressed = 0
-    clicks = 0
-    misses = 0
-    start_time = time.time()
-    pygame.time.set_timer(TARGET_EVENT, TARGET_INCREMENT)
-
     while run:
         clock.tick(60)
         click = False
