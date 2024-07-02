@@ -17,6 +17,7 @@ TARGET_EVENT = pygame.USEREVENT
 TARGET_PADDING = 30
 
 BG_COLOR = (0, 25, 40)
+LIVES = 3
 
 class Target:
     MAX_SIZE = 30
@@ -58,6 +59,10 @@ def draw(win, target):
         target.draw(win)
 
     pygame.display.update()
+
+
+def draw_top_bar(win, elapsed_time, target_pressed, misses):
+
 
 
 def main():
