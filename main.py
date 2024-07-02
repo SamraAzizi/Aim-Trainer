@@ -81,6 +81,7 @@ def main():
         clock.tick(60)
         click = False
         mouse_pos == pygame.mouse.get_pos()
+        elapsed_time = time.time() - start_time
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -117,7 +118,7 @@ def main():
             pass  ## end the game
 
         draw(WIN, targets)
-        draw_top_bar()
+        draw_top_bar(WIN , elapsed_time)
     
     pygame.quit()
 
