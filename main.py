@@ -105,6 +105,8 @@ def main():
                 misses == 1
 
             if click and target.collide(*mouse_pos):
+                targets.remove(target)
+                target_pressed += 1
 
         draw(WIN, targets)
     
