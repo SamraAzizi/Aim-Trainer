@@ -20,6 +20,8 @@ BG_COLOR = (0, 25, 40)
 LIVES = 3
 TOP_BAR_HEIGHT = 50
 
+LABEL_FONT = pygame.font.SysFont("comicsans", 24)
+
 class Target:
     MAX_SIZE = 30
     GROWTH_RATE = 0.2
@@ -63,7 +65,8 @@ def draw(win, target):
 
 
 def draw_top_bar(win, elapsed_time, target_pressed, misses):
-    pygame.draw.rect(win, "grey", (0, 0, WIDTH, ))
+    pygame.draw.rect(win, "grey", (0, 0, WIDTH,TOP_BAR_HEIGHT ))
+    time_label = LABEL_FONT.render()
 
 
 
