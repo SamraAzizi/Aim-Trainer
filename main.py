@@ -18,6 +18,7 @@ TARGET_PADDING = 30
 
 BG_COLOR = (0, 25, 40)
 LIVES = 3
+TOP_BAR_HEIGHT = 50
 
 class Target:
     MAX_SIZE = 30
@@ -62,6 +63,7 @@ def draw(win, target):
 
 
 def draw_top_bar(win, elapsed_time, target_pressed, misses):
+    pygame.draw.rect(win, "grey", (0, 0, WIDTH, ))
 
 
 
@@ -118,7 +120,7 @@ def main():
             pass  ## end the game
 
         draw(WIN, targets)
-        draw_top_bar(WIN , elapsed_time)
+        draw_top_bar(WIN , elapsed_time, target_pressed, misses)
     
     pygame.quit()
 
