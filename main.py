@@ -80,7 +80,7 @@ def draw_top_bar(win, elapsed_time, target_pressed, misses):
 
     hits_label = LABEL_FONT.render(f"Hits: {target_pressed}", 1, "black")
 
-    hits_label = LABEL_FONT.render(f"Lives: {LIVES - misses}", 1, "black")
+    lives_label = LABEL_FONT.render(f"Lives: {LIVES - misses}", 1, "black")
 
     win.blit(time_label, (5, 5))
     win.blit(speed_label, (200, 5))
@@ -89,7 +89,19 @@ def draw_top_bar(win, elapsed_time, target_pressed, misses):
 
 
 def end_screen(win, elapsed_time, targets_pressed, clicks):
-    
+    win.blit(BG_COLOR)
+
+    time_label = LABEL_FONT.render(f"Time: {format_time(elapsed_time)}", 1, "black")
+
+    speed = round(target_pressed / elapsed_time, 1)
+    speed_label = LABEL_FONT.render(f"Speed: {speed} t/s", 1, "black")
+
+
+    hits_label = LABEL_FONT.render(f"Hits: {target_pressed}", 1, "black")
+
+    lives_label = LABEL_FONT.render(f"Lives: {LIVES - misses}", 1, "black")
+
+
 
 
 
