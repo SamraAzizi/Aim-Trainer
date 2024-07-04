@@ -88,6 +88,10 @@ def draw_top_bar(win, elapsed_time, target_pressed, misses):
     win.blit(hits_label, (650, 5))
 
 
+def end_screen(win, elapsed_time, targets_pressed, clicks):
+    
+
+
 
 def main():
     run = True
