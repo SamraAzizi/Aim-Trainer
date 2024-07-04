@@ -99,7 +99,10 @@ def end_screen(win, elapsed_time, targets_pressed, clicks):
 
     hits_label = LABEL_FONT.render(f"Hits: {target_pressed}", 1, "black")
 
-    lives_label = LABEL_FONT.render(f"Lives: {LIVES - misses}", 1, "black")
+    accuracy = round(targets_pressed / clicks * 100,1 )
+    accuracy_label = LABEL_FONT.render(f"Hits: {target_pressed}", 1, "black")
+
+   
 
 
 
