@@ -109,6 +109,14 @@ def end_screen(win, elapsed_time, targets_pressed, clicks):
     win.blit(hits_label, (get_middle(accuracy_label), 5))
 
     pygame.display.update()
+
+    run = True
+
+    while run:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                quit()
+
    
 
 
