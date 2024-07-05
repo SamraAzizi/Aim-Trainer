@@ -105,8 +105,10 @@ def end_screen(win, elapsed_time, targets_pressed, clicks):
     
     win.blit(time_label, (get_middle(time_label), 5))
     win.blit(speed_label, (get_middle(speed_label), 5))
-    win.blit(hits_label, (450, 5))
-    win.blit(hits_label, (650, 5))
+    win.blit(hits_label, (get_middle(hits_label), 5))
+    win.blit(hits_label, (get_middle(accuracy_label), 5))
+
+    pygame.display.update()
    
 
 
