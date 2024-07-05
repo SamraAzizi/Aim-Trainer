@@ -114,13 +114,10 @@ def end_screen(win, elapsed_time, targets_pressed, clicks):
 
     while run:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT or event.type == pygame.KEYDOWN:
                 quit()
 
-            if event.type == pygame.KEYDOWN:
-                run = False
-                break
-
+            
    
 
 
