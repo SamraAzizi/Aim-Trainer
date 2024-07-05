@@ -101,8 +101,10 @@ def end_screen(win, elapsed_time, targets_pressed, clicks):
 
     accuracy = round(targets_pressed / clicks * 100,1 )
     accuracy_label = LABEL_FONT.render(f"Accuracy: {accuracy}%", 1, "black")
-
-    win.blit(speed_label, (200, 5))
+    
+    
+    win.blit(time_label, (get_middle(time_label), 5))
+    win.blit(speed_label, (get_middle(speed_label), 5))
     win.blit(hits_label, (450, 5))
     win.blit(hits_label, (650, 5))
    
