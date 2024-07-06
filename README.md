@@ -21,11 +21,6 @@ Aim Trainer is a simple game built with Python and Pygame that helps you improve
 
 ## Installation
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/aim-trainer.git
-    cd aim-trainer
-    ```
 
 2. **Install the required dependencies:**
     Ensure you have Python installed. Then install the dependencies using pip:
