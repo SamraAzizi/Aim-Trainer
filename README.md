@@ -28,8 +28,5 @@ Aim Trainer is a simple game built with Python and Pygame that helps you improve
     pip install pygame
     ```
 
-## Usage
 
-To run the game, execute the following command:
-```bash
 python aim_trainer.py
